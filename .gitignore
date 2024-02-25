@@ -6,7 +6,6 @@
 personal_blog/public/
 personal_blog/resources/_gen/
 personal_blog/assets/jsconfig.json
-personal_blog/themes/
 hugo_stats.json
 
 # Executable may be added to repository

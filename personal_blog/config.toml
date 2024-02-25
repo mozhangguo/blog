@@ -1,10 +1,12 @@
-baseURL = 'https://mozhangguo.github.io/'
-# languageCode = 'en-us'
+# This is a simple configuration.
+# If you want to see the full configuration, please check `full-config.toml` .
+# And see https://gohugo.io/getting-started/configuration/ .
+
+baseURL = "https://mozhangguo.github.io/"
+title = "Mozhang Guo Blog"
 enableRobotsTXT = true
 enableEmoji = true
-title = 'Mozhang Guo Blog'
-theme = 'jane'
-
+theme = "jane"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
@@ -24,7 +26,7 @@ defaultContentLanguage = "en"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
+  name = "This is Home"
   weight = 10
   identifier = "home"
   pageref = "/"
@@ -44,28 +46,24 @@ defaultContentLanguage = "en"           # Default language to use
   identifier = "categories"
   pageref = "/categories/"
 [[menu.main]]
-  name = "Docs"
+  name = "external-link"
   weight = 50
-  identifier = "docs"
-  pageref = "/docs/"
-[[menu.main]]
-  name = "Resume"
-  weight = 60
   pageref = "https://gohugo.io"
-  
-[params]
-  since = "2024"            # Site creation time          # 站点建立时间
-  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
-  rssFullContent = false     # if false, Rss feed instead of the summary
 
-  author.name = "Mozhang Guo"      # essential                     # 必需
-  author.email = "michael.guo1225@gmail.com" # optional, for RSS             # 可选
+
+[params]
+  since = "2017"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
+  rssFullContent = true     # if false, Rss feed instead of the summary
+
+  author.name = "Jane"      # essential                     # 必需
+  author.email = "me@example.com" # optional, for RSS             # 可选
   author.url = "/about"        # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Mozhang Guo Blog"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","jane"]
-  description = "Mozhang Guo personal website."
+  description = "Hugo theme jane example site."
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -74,7 +72,7 @@ defaultContentLanguage = "en"           # Default language to use
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
-  # contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
@@ -82,25 +80,24 @@ defaultContentLanguage = "en"           # Default language to use
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:michael.guo1225@gmail.com"
-    b-stack-overflow = "https://stackoverflow.com/users/17483068/michael-guo"
-    c-twitter = "https://twitter.com/MozhangG"
-    d-facebook = "https://www.facebook.com/m45guo/"
-    e-linkedin = "https://www.linkedin.com/in/mozhang-guo-265514128/"
-    f-hackerrank = "https://www.hackerrank.com/profile/haburu"  
-#f-google = "http://localhost:1313"
-    g-github = "https://github.com/mozhangguo"
-    h-deviantart = "https://www.deviantart.com/redmainecoon"
-    #i-zhihu = "http://localhost:1313"
-    #j-douban = "http://localhost:1313"
-    #k-pocket = "http://localhost:1313"
-    #l-tumblr = "http://localhost:1313"
-    #m-instagram = "http://localhost:1313"
-    #n-gitlab = "http://localhost:1313"
-    #o-goodreads = "http://localhost:1313"
-    #p-coding = "http://localhost:1313"
-    #q-bilibili = "http://localhost:1313"
-    #r-codeforces = "http://localhost:1313"
-    #s-mastodon = "http://localhost:1313"
-    #t-youtube = "http://localhost:1313"
-    #u-twitch = "http://localhost:1313"
+    a-email = "mailto:your@email.com"
+    b-stack-overflow = "http://localhost:1313"
+    c-twitter = "http://localhost:1313"
+    d-facebook = "http://localhost:1313"
+    e-linkedin = "http://localhost:1313"
+    f-hackerrank = "http://localhost:1313"
+    g-github = "http://localhost:1313"
+    h-weibo = "http://localhost:1313"
+    i-zhihu = "http://localhost:1313"
+    j-douban = "http://localhost:1313"
+    k-pocket = "http://localhost:1313"
+    l-tumblr = "http://localhost:1313"
+    m-instagram = "http://localhost:1313"
+    n-gitlab = "http://localhost:1313"
+    o-goodreads = "http://localhost:1313"
+    p-coding = "http://localhost:1313"
+    q-bilibili = "http://localhost:1313"
+    r-codeforces = "http://localhost:1313"
+    s-mastodon = "http://localhost:1313"
+    t-youtube = "http://localhost:1313"
+    u-twitch = "http://localhost:1313"
