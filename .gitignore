@@ -3,8 +3,8 @@
 
 ### Hugo ###
 # Generated files by hugo
-personal_blog/resources/_gen/
-personal_blog/assets/jsconfig.json
+#personal_blog/resources/_gen/
+#personal_blog/assets/jsconfig.json
 personal_blog/public/
 # Executable may be added to repository
 hugo.exe
